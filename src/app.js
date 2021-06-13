@@ -127,7 +127,7 @@ res.send({
 app.get('/help/*', (req, res)=>{
 res.render('404', {
     title: 404,
-    name: "Sexy Mandarin",
+    name: "Sexy Mandarin 2021",
     message: 'Help page not Found!',
 });
 })
@@ -135,7 +135,7 @@ res.render('404', {
 app.get('*', (req, res)=>{
 res.render('404', {
     title: 404,
-    name: "Sexy Mandarin",
+    name: "Sexy Mandarin 2021",
     message: '404 NOT FOUND!',
 });
 });
