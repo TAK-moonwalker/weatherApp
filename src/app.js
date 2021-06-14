@@ -8,6 +8,8 @@ const forecast = require('./util/forecast.js');
 
 const app = express();
 
+const port = process.env.PORT
+
 // define path for Express config
 pathToPublic = path.join(__dirname, '../public');
 viewsPath = path.join(__dirname, '../web/views');
@@ -142,6 +144,6 @@ res.render('404', {
 
 
 
-app.listen(3000, ()=>{
-    console.log("server is running on port:3000");
+app.listen(port, ()=>{
+    console.log(`server is running on port:${port}`);
 });
