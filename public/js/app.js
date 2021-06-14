@@ -32,7 +32,7 @@ message02.textContent = 'loading...'
             if(data.error){
                return message01.textContent = data.error;
             }
-            message01.textContent = data.location;
+            message01.textContent = `Your input location : ${data.location}`;
             message02.textContent = data.Weatherforcase;
         })
         })

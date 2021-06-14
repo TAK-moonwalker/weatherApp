@@ -8,7 +8,7 @@ const forecast = require('./util/forecast.js');
 
 const app = express();
 
-const port = process.env.PORT
+const port = process.env.PORT || 3000;
 
 // define path for Express config
 pathToPublic = path.join(__dirname, '../public');
