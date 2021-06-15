@@ -3,23 +3,30 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content>
+    <meta name="author" content>
+    <link rel='icon' href='/img/weather.png'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
     <title>About me</title>
     <link rel="stylesheet" href="/css/style.css">
-
     <link rel='icon' href='/img/weather.png'>
+    <link rel="stylesheet" href="/css/sticky-footer-navbar.css">
 
 </head>
 
 <body>
-    <div class="main-contents">
 {{>header}}
-<p class='about'>
+  <main role="main" class="container">
+<h3>About developer</h3>
+<p class="read">
 3 month full-stack developer in mactan, Cebu.<br>
 I create anthying from Tofu to web App.<br>
 </p>
 <img src="/img/king.jpg" class="portrait">
-<p>created by {{name}}</p>
-</div>
+<p>portrait : created by {{name}}</p>
+</main>
 {{>footer}}
 </body>
 
