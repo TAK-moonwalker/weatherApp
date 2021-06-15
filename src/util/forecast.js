@@ -8,7 +8,7 @@ request({url, json: true}, (error, {body})=>{
     }else if(body.success === false){
 callback(body.error.info, undefined)
     }else{
-const responseData = `Address : ${body.location.name} --- weather : ${body.current.weather_descriptions[0]}, temperature : ${body.current.temperature}, humidity : ${body.current.humidity}`
+const responseData = `Address : ${body.location.name} --- weather : ${body.current.weather_descriptions[0]}, temperature : ${body.current.temperature}°C, humidity : ${body.current.humidity}%`
    callback(undefined, responseData);
     }
 })
